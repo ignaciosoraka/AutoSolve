@@ -884,6 +884,12 @@ header
   z-index: 1000;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .whatsapp-button {
+    padding: 4px 12px;
+  }
+}
+
 
 .whatsapp-button:hover {
   background-color: #128C7E;
@@ -1008,6 +1014,16 @@ banner
 
 @media screen and (max-width: 767px) {
 
+
+  .main-banner .caption {
+    text-align: center;
+    position: absolute;
+   
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
   .main-banner .caption h6 {
     font-weight: 500;
   }
@@ -1041,9 +1057,7 @@ About Us Style
   padding-top: 130px;
 }
 
-.about-us .section-heading {
-  margin-bottom: 40px;
-}
+
 
 .about-us .left-image {
   margin-right: 45px;
@@ -1286,8 +1300,8 @@ Features
 --------------------------------------------- 
 */
 #features {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .features .features-content {
@@ -1407,6 +1421,15 @@ Features
   transition: all 0.5s;
 }
 
+.h1about2 {
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  padding-bottom: 80px;
+  font-size: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 
 @media (max-width: 992px) {
@@ -1418,6 +1441,12 @@ Features
   .last-features-item,
   .last-skill-item {
     margin-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 765px) {
+  #feature{
+    padding-top: 20px;
   }
 }
 
@@ -1889,7 +1918,10 @@ section.our-facts .video img {
   padding: 170px 0px;
   max-width: 56px;
 }
-
+@media (max-width: 1300px) {  
+  .section.our-facts h2{
+    font-size: 23px;
+  } }
 
 /* 
 ---------------------------------------------
@@ -2422,9 +2454,7 @@ responsive
 
 @media (max-width: 992px) {
 
-  .main-banner .caption {
-    top: 60%;
-  }
+  
 
   .main-banner .caption h2 {
     margin-top: 10px;
