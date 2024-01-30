@@ -2189,7 +2189,7 @@ section.heading-page {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 150px;
-    padding-bottom: 130px;
+    padding-bottom: 40px;
     text-align: center;
   }
 }
@@ -2794,6 +2794,11 @@ responsive
 
   .header-area .main-nav .nav li ul.sub-menu li a {
     color: #1f272b;
+  }
+
+  .texto{
+   
+    margin-bottom: 50px;
   }
 
 }
