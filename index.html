@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
   <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <!--
@@ -51,14 +53,15 @@ https://templatemo.com/tm-569-edu-meeting
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Inicio</a></li>
-              <li><a href="">Sobre nosotros</a></li>
+              <li class="scroll-to-section"><a href="index.html" class="active">Inicio</a></li>
+              <li><a href="aboutus.html">Sobre nosotros</a></li>
 
               <li class="has-sub">
                 <a href="javascript:void(0)">Proyectos</a>
                 <ul class="sub-menu">
                   <li><a href="">Cascada</a></li>
                   <li><a href="">Beertrack</a></li>
+                  <li><a href="meetings.html">+ Ver todos</a></li>
                 </ul>
               </li>
 
@@ -129,7 +132,7 @@ https://templatemo.com/tm-569-edu-meeting
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel">
+          <div class="owl-service-item owl-carousel2">
 
             <div class="item service-card" data-title="Best Education">
               <a href="">
@@ -205,19 +208,19 @@ https://templatemo.com/tm-569-edu-meeting
   </script>
 
 
-  <section class="upcoming-meetings" style="padding-top: 100px;" id="meetings">
+  <section     class="upcoming-meetings" style="padding-top: 100px;" id="meetings">
 
     <div id="about" class="about-us section">
-      <h1 class="h1about section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s" >
+      <h1 class="h1about section-heading wow bounceIn"  >
         NUESTRA ESPECIALIZACIÓN</h1>
       <div class="container">
 
-        <div class="row">
+        <div id="software" class="row">
           <div class="col-lg-6 align-self-center order-1 order-lg-1 wow fadeInLeft" data-wow-duration="1s"
             data-wow-delay="0.5s">
             <div class="section-heading">
               <h6></h6>
-              <h2>SOFTWARE</h2>
+              <h2 >SOFTWARE</h2>
             </div>
             <div class="row">
               <div class="col-lg-4 col-sm-4">
@@ -239,7 +242,7 @@ https://templatemo.com/tm-569-edu-meeting
                 </div>
               </div>
             </div>
-            <p style="color: black;">Sitios web, sistemas y aplicaciones moviles con soluciones de software personalizadas. Expertos en diseño
+            <p>Sitios web, sistemas y aplicaciones moviles con soluciones de software personalizadas. Expertos en diseño
               UI/UX y desarrollo backend y frontend.</p>
             <div class="main-button-red3"><a href="#">Conocer Mas</a></div>
           </div>
@@ -255,8 +258,8 @@ https://templatemo.com/tm-569-edu-meeting
 
 
 
-  <section class="upcoming-meetings" style="padding-bottom: 100px;" id="meetings">
-    <div id="about" class="about-us section">
+  <section id="automatizacion" class="upcoming-meetings" style="padding-bottom: 100px;" id="meetings">
+    <div id="about"  class="about-us section">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1">
@@ -268,7 +271,7 @@ https://templatemo.com/tm-569-edu-meeting
             data-wow-delay="0.9s">
             <div class="section-heading">
               <h6></h6>
-              <h2>AUTOMATIZACIÓN</h2>
+              <h2 >AUTOMATIZACIÓN</h2>
             </div>
             <div class="row">
               <div class="col-lg-4 col-sm-4">
@@ -290,7 +293,7 @@ https://templatemo.com/tm-569-edu-meeting
                 </div>
               </div>
             </div>
-            <p style="color: black;">Servicios integrales con tecnología de vanguardia, incluyendo programación de PLC, HMI, servidores web y
+            <p>Servicios integrales con tecnología de vanguardia, incluyendo programación de PLC, HMI, servidores web y
               desarrollo de software personalizado, sitios web y aplicaciones móviles.</p>
             <div class="main-button-red3"><a href="#">Conocer Mas</a></div>
           </div>
@@ -452,6 +455,11 @@ https://templatemo.com/tm-569-edu-meeting
                       <input name="subject" type="text" id="subject" placeholder="Objetivo" required="">
                     </fieldset>
                   </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="empresa" type="text" id="empresa" placeholder="Nombre de tu empresa" >
+                    </fieldset>
+                  </div>
                   <div class="col-lg-12">
                     <fieldset>
                       <textarea name="message" type="text" class="form-control" id="message" placeholder="Mensaje"
@@ -476,17 +484,14 @@ https://templatemo.com/tm-569-edu-meeting
                 <span>012-345-6789</span>
               </li>
               <li>
-                <h6>Email Address</h6>
-                <span>autosolve.ar@gmail.com</span>
+                <h6>Direccion de correo</h6>
+                <span>info@autosolve.com.ar</span>
               </li>
               <li>
                 <h6>Direccion</h6>
                 <span>Bolougne sur mer 447, Paraná, Entre Ríos, Argentina </span>
               </li>
-              <li>
-                <h6>Web</h6>
-                <span>www.autosolve.com</span>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -503,7 +508,7 @@ https://templatemo.com/tm-569-edu-meeting
 
       <div class="footer-nav">
         <a href="#">Nosotros</a>
-        <a href="#">Automatizacion</a>
+        <a href="#automatizacion">Automatizacion</a> <a href="#software">Software</a>
         <a href="#">Ubicacion</a>
         <a href="#">Contactanos</a>
       </div>
@@ -542,6 +547,7 @@ https://templatemo.com/tm-569-edu-meeting
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/animation.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
   <script>
     //according to loftblog tut
     $('.nav li:first').addClass('active');
