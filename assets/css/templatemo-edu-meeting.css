@@ -143,7 +143,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020202;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  
+}
 a {
   text-decoration: none !important;
   color: #3CF;
@@ -916,22 +928,34 @@ header
 banner
 --------------------------------------------- 
 */
-/* Asegúrate de ajustar la ruta de la imagen según la ubicación de tu archivo CSS */
+#particles-js {
+  position: fixeda;
+  
+  width: 100%;
+  height: 100vh; /* Altura ajustable según la cantidad deseada de partículas */
+  background-color: #19273d;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+ 
+}
 .main-banner {
-  background: url('../images/background_autosolve-12.jpg') center center/cover no-repeat;
+ 
   position: relative;
   height: 100vh;
-  /* Ajusta la altura según tus necesidades */
-}
+ 
+}  
 
 /* Agrega estos estilos para que el contenido se muestre encima de la imagen de fondo */
 .video-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
- 
+  
+
   
   /* Puedes ajustar la opacidad según tus preferencias */
 }
@@ -956,7 +980,7 @@ banner
   max-width: 100%;
   max-height: 100vh;
   object-fit: cover;
-  z-index: -1;
+ 
 }
 
 #bg-video::-webkit-media-controls {
@@ -965,7 +989,7 @@ banner
 
 .video-overlay {
   position: absolute;
-
+  background-color: rgba(31,39,43,0.75);
   top: 0;
   left: 0;
   bottom: 0;
@@ -1433,8 +1457,6 @@ Features
   padding-left: 15px;
   padding-right: 15px;
 }
-
-
 @media (max-width: 992px) {
  
   .features-item {
@@ -1452,6 +1474,8 @@ Features
     padding-top: 20px;
   }
 }
+
+
 
 
 /*
@@ -1924,7 +1948,15 @@ section.our-facts .video img {
 @media (max-width: 1300px) {  
   .section.our-facts h2{
     font-size: 23px;
-  } }
+  } 
+
+  section.our-facts {
+    
+    padding: 80px 0px 125px 0px;
+  }
+
+
+}
 
 /* 
 ---------------------------------------------
@@ -1933,13 +1965,25 @@ contact us
 */
 
 section.contact-us {
+  position: relative;
   background-image: url(../images/background_autosolve-12.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 140px 0px 0px 0px;
+  padding: 30px 0;
 }
+
+section.contact-us2 {
+  position: relative;
+ 
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 
 section.contact-us #contact {
   background-color: #fff;
@@ -2407,6 +2451,36 @@ section.meetings-page .pagination ul li a:hover {
     width: 100%;
   }
 }
+
+
+/*---------------------------------------
+  ABOUT & TEAM SECTION               
+-----------------------------------------*/
+.about-section{
+  margin-bottom: 100px;
+}
+
+
+.about-image {
+  border-radius:15px;
+  display: block;
+}
+
+.team-thumb {
+  border-radius:15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-info {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 30px;
+}
+
 
 /*
 =======================

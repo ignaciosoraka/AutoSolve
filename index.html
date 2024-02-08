@@ -36,7 +36,9 @@ https://templatemo.com/tm-569-edu-meeting
 </head>
 
 
-<body>
+<body> 
+
+  <div id="particles-js"></div>
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
@@ -78,13 +80,15 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
   </header>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
 
-    <!-- Elimina el video -->
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/video/PRUEBA.mp4" type="video/mp4" />
+    </video>
 
     <div class="video-overlay header-text">
       <div class="container">
@@ -115,6 +119,8 @@ https://templatemo.com/tm-569-edu-meeting
       </div>
     </div>
   </section>
+  
+
 
   <!-- =========================
     boton flotante
@@ -178,7 +184,7 @@ https://templatemo.com/tm-569-edu-meeting
                 </div>
                 <div class="down-content">
                   <h4>Rubinzal-Culzoni</h4>
-                  <p >Con la aplicación de Rubinzal Online podrá permirte hacer búsquedas generales y específicas de todo
+                  <p>Con la aplicación de Rubinzal Online podrá permirte hacer búsquedas generales y específicas de todo
                     el contenido jurídico disponible en nuestra base de datos. </p>
                 </div>
               </a>
@@ -208,10 +214,10 @@ https://templatemo.com/tm-569-edu-meeting
   </script>
 
 
-  <section     class="upcoming-meetings" style="padding-top: 100px;" id="meetings">
+  <section class="upcoming-meetings" style="padding-top: 100px;" id="meetings">
 
     <div id="about" class="about-us section">
-      <h1 class="h1about section-heading wow bounceIn"  >
+      <h1 class="h1about section-heading wow bounceIn">
         NUESTRA ESPECIALIZACIÓN</h1>
       <div class="container">
 
@@ -220,7 +226,7 @@ https://templatemo.com/tm-569-edu-meeting
             data-wow-delay="0.5s">
             <div class="section-heading">
               <h6></h6>
-              <h2 >SOFTWARE</h2>
+              <h2>SOFTWARE</h2>
             </div>
             <div class="row">
               <div class="col-lg-4 col-sm-4">
@@ -259,7 +265,7 @@ https://templatemo.com/tm-569-edu-meeting
 
 
   <section id="automatizacion" class="upcoming-meetings" style="padding-bottom: 100px;" id="meetings">
-    <div id="about"  class="about-us section">
+    <div id="about" class="about-us section">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1">
@@ -271,7 +277,7 @@ https://templatemo.com/tm-569-edu-meeting
             data-wow-delay="0.9s">
             <div class="section-heading">
               <h6></h6>
-              <h2 >AUTOMATIZACIÓN</h2>
+              <h2>AUTOMATIZACIÓN</h2>
             </div>
             <div class="row">
               <div class="col-lg-4 col-sm-4">
@@ -428,7 +434,7 @@ https://templatemo.com/tm-569-edu-meeting
 
 
 
-  <section class="contact-us" id="contact">
+  <section class="contact-us" id="contacto">
     <div class="container">
       <div class="row">
         <div class="col-lg-9 align-self-center">
@@ -457,7 +463,7 @@ https://templatemo.com/tm-569-edu-meeting
                   </div>
                   <div class="col-lg-4">
                     <fieldset>
-                      <input name="empresa" type="text" id="empresa" placeholder="Nombre de tu empresa" >
+                      <input name="empresa" type="text" id="empresa" placeholder="Nombre de tu empresa">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
@@ -491,7 +497,7 @@ https://templatemo.com/tm-569-edu-meeting
                 <h6>Direccion</h6>
                 <span>Bolougne sur mer 447, Paraná, Entre Ríos, Argentina </span>
               </li>
-              
+
             </ul>
           </div>
         </div>
@@ -500,6 +506,10 @@ https://templatemo.com/tm-569-edu-meeting
 
 
 
+
+  </section>
+
+  <section class="contact-us2" >
     <div class="footer">
       <div class="footer-logo">
         <!-- Aquí coloca tu logo -->
@@ -520,11 +530,10 @@ https://templatemo.com/tm-569-edu-meeting
         <li><a href="#" class="fa-brands fa-facebook" data-wow-delay="1.6s"></a></li>
         <li><a href="#" class="fa-brands fa-tiktok" data-wow-delay="1.9s"></a></li>
         <li><a href="#" class="fa-brands fa-linkedin" data-wow-delay="2.2s"></a></li>
-        <li><a href="#" class="fa fa-youtube wow fadeInUp" data-wow-delay="2.3s"></a></li>
+        <li><a href="#" class="fa-brands fa-facebook" data-wow-delay="2.3s"></a></li>
       </ul>
     </div>
   </section>
-
   <!-- Scripts -->
 
   <script>
@@ -536,7 +545,8 @@ https://templatemo.com/tm-569-edu-meeting
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/app.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/logo.js"></script>
   <script src="assets/js/isotope.min.js"></script>
@@ -594,6 +604,127 @@ https://templatemo.com/tm-569-edu-meeting
     $(window).scroll(function () {
       checkSection();
     });
+  </script>
+
+  <script>
+    particlesJS(
+      {
+        "particles": {
+          "number": {
+            "value": 70,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 5,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 1.5,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true,
+        "config_demo": {
+          "hide_card": false,
+          "background_color": "#b61924",
+          "background_image": "",
+          "background_position": "50% 50%",
+          "background_repeat": "no-repeat",
+          "background_size": "cover"
+        }
+      }
+    )
   </script>
 </body>
 
